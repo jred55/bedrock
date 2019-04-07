@@ -16,9 +16,10 @@ Bedrock also provides automation for deploying Kubernetes clusters with Terrafor
 
 A Bedrock deployment follows three general steps at a high level:
 
-1. Define a [Fabrikate](https://github.com/Microsoft/fabrikate) definition for your deployment.
-2. [Deploy a CI/CD pipeline](./gitops) to build resource manifests from this deployment definition.
-3. [Create and deploy](./cluster) a Kubernetes environment with Flux.
+1. [Create and deploy](./cluster) a Kubernetes environment with Flux.
+2. Define a [Fabrikate](https://github.com/Microsoft/fabrikate) definition for your deployment.
+3. [Deploy a CI/CD pipeline](./gitops) to build resource manifests from this deployment definition.
+
 
 Our cluster creation templates include deployments of a [cloud-native stack](https://github.com/timfpark/fabrikate-cloud-native) by default.  This is intended to be replaced with your own resource manifest repo, but you can also take advantage of this by jumping directly to step #3 if you'd like to give Bedrock a try before defining your own deployment.
 
